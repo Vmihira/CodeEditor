@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.sp-wrapper {
+  height: 100% !important;
+  background: transparent !important;
+}
+
+.sp-layout {
+  height: 100% !important;
+  border: none !important;
+  background: transparent !important;
+}
+
+.sp-tabs {
+  background: #2d2d2d !important;
+  border-bottom: 1px solid #3d3d3d !important;
+}
+
+.sp-tab-button {
+  color: #ffffff !important;
+  padding: 8px 16px !important;
+  font-size: 0.875rem !important;
+  transition: background-color 0.2s !important;
+}
+
+.sp-tab-button:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.sp-tab-button[data-active='true'] {
+  background: rgba(59, 130, 246, 0.2) !important;
+  border-bottom: 2px solid #3b82f6 !important;
+}
+
+.sp-preview-container {
+  background: #1e1e1e !important;
+}
+
+.sp-preview-actions {
+  background: #2d2d2d !important;
+  border-bottom: 1px solid #3d3d3d !important;
+}
+
+.sp-preview-iframe {
+  background: #ffffff !important;
+}
+
+.sp-console {
+  background: #1e1e1e !important;
+  color: #ffffff !important;
+  font-family: 'Menlo', 'Monaco', 'Courier New', monospace !important;
+}
+
+.sp-console-logs {
+  padding: 1rem !important;
+}
+
+.custom-file-explorer {
+  .sp-file-explorer {
+    background: transparent !important;
+    color: #ffffff !important;
+    height: 100% !important;
+  }
+
+  .sp-file-explorer-list {
+    padding: 0 !important;
+  }
+
+  .sp-file-explorer-item {
+    color: #ffffff !important;
+    padding: 6px 12px !important;
+    border-radius: 4px !important;
+    margin-bottom: 2px !important;
+    font-size: 0.875rem !important;
+    transition: all 0.2s !important;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.1) !important;
+    }
+
+    &[data-active="true"] {
+      background: rgba(59, 130, 246, 0.5) !important;
+      color: #ffffff !important;
+    }
+  }
+}
